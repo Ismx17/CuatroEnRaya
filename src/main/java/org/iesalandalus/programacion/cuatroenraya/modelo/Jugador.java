@@ -5,7 +5,7 @@ public record Jugador(String nombre, Ficha colorFichas) {
     public Jugador {
         validarNombre(nombre);
         validarColorFichas(colorFichas);
-        if (nombre.isBlank() && colorFichas != null)    {
+        if (nombre.isBlank())    {
             throw new IllegalArgumentException("El nombre no puede estar en blanco.");
         }
     }
