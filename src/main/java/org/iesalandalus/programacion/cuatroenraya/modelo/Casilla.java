@@ -1,5 +1,7 @@
 package org.iesalandalus.programacion.cuatroenraya.modelo;
 
+import java.util.Objects;
+
 public class Casilla {
 
     Ficha ficha;
@@ -13,9 +15,7 @@ public class Casilla {
     }
 
     public void setFicha(Ficha ficha) throws NullPointerException, CuatroEnRayaExcepcion {
-        if (ficha == null) {
-            throw new NullPointerException("No se puede poner una ficha nula.");
-        }
+        Objects.requireNonNull(ficha, "La ficha no puede ser nula.");
         if (this.ficha != null) {
             throw new CuatroEnRayaExcepcion("La casilla ya contiene una ficha.");
         }
