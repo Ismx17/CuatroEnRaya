@@ -1,5 +1,8 @@
-package org.iesalandalus.programacion.cuatroenraya.modelo;
+package org.iesalandalus.programacion.cuatroenraya;
 
+import org.iesalandalus.programacion.cuatroenraya.modelo.CuatroEnRayaExcepcion;
+import org.iesalandalus.programacion.cuatroenraya.modelo.Ficha;
+import org.iesalandalus.programacion.cuatroenraya.modelo.Tablero;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
